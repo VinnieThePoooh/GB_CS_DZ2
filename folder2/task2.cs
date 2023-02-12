@@ -12,5 +12,12 @@ if (number<100)
 }
 else
 {
-    System.Console.WriteLine("сейчас придумаем");
+    while (number>999)
+    {
+        number = number/10;
+    }
+    
+    int ansver = number%10;
+    System.Console.WriteLine(ansver);
+    
 }
